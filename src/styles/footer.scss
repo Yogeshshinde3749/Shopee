@@ -1,0 +1,386 @@
+.footer {
+  background: #ffffff;
+  color: #2c3e50;
+  margin-top: auto;
+  border-top: 1px solid #ecf0f1;
+}
+
+.newsletter-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,100 1000,0 1000,100"/></svg>');
+  background-size: cover;
+}
+
+.newsletter-content {
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.newsletter-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-input {
+  background: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #2c3e50;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+  outline: none;
+}
+
+.newsletter-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.main-footer {
+  padding: 80px 0 40px;
+  position: relative;
+  background: #ffffff;
+}
+
+.footer-section {
+  height: 100%;
+}
+
+.brand-section {
+  margin-bottom: 2rem;
+}
+
+.brand-logo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+
+.brand-description {
+  color: #7f8c8d;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.contact-icon {
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+.footer-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 1px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #7f8c8d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: #667eea;
+  transform: translateX(5px);
+}
+
+.social-media {
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #f8f9fa;
+  color: #7f8c8d;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #ecf0f1;
+}
+
+.social-link:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  border-color: transparent;
+}
+
+.apps-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.app-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 12px 16px;
+  background: #f8f9fa;
+  border: 1px solid #ecf0f1;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.app-button:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.app-icon {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.app-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-subtitle {
+  font-size: 0.75rem;
+  color: #7f8c8d;
+}
+
+.app-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.bottom-footer {
+  background: #f8f9fa;
+  padding: 25px 0;
+  border-top: 1px solid #ecf0f1;
+}
+
+.copyright p {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+  color: #7f8c8d;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #667eea;
+}
+
+/* Responsive Styles */
+@media (max-width: 575.98px) {
+  .newsletter-section {
+    padding: 40px 0;
+  }
+  
+  .newsletter-title {
+    font-size: 1.8rem;
+  }
+  
+  .newsletter-subtitle {
+    font-size: 1rem;
+  }
+  
+  .newsletter-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .main-footer {
+    padding: 50px 0 30px;
+  }
+  
+  .brand-logo {
+    font-size: 2rem;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .app-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .newsletter-title {
+    font-size: 2rem;
+  }
+  
+  .brand-logo {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .newsletter-section {
+    padding: 50px 0;
+  }
+  
+  .main-footer {
+    padding: 60px 0 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsletter-section {
+    padding: 70px 0;
+  }
+  
+  .newsletter-title {
+    font-size: 3rem;
+  }
+  
+  .main-footer {
+    padding: 90px 0 45px;
+  }
+  
+  .brand-logo {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .newsletter-section {
+    padding: 80px 0;
+  }
+  
+  .newsletter-title {
+    font-size: 3.5rem;
+  }
+  
+  .main-footer {
+    padding: 100px 0 50px;
+  }
+  
+  .brand-logo {
+    font-size: 3rem;
+  }
+}

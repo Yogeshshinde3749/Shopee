@@ -1,0 +1,226 @@
+.login-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 1rem;
+  .login-card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    max-width: 400px;
+    margin: 0 auto;
+
+    .brand-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .login-header {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .login-subtext {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #7f8c8d;
+      margin-bottom: 2rem;
+
+      a {
+        color: #764ba2;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #667eea;
+        }
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+
+      label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #4b5563;
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        font-size: 0.875rem;
+        transition: all 0.3s ease;
+        color: #1f2937;
+
+        &::placeholder {
+          color: #9ca3af;
+        }
+
+        &:focus {
+          border-color: #667eea;
+          box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+          background-color: #fff;
+        }
+      }
+    }
+
+    .checkbox-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        color: #4b5563;
+
+        input {
+          margin-right: 0.5rem;
+        }
+      }
+
+      a {
+        color: #764ba2;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #667eea;
+        }
+      }
+    }
+
+    .submit-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+        transform: scale(1.03);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+      }
+
+      &:disabled {
+        background: #cbd5e0;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+      }
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .divider {
+      position: relative;
+      text-align: center;
+      margin: 2rem 0;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 40%;
+        height: 1px;
+        background-color: #e5e7eb;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+
+      span {
+        background-color: #ffffff;
+        padding: 0 1rem;
+        font-size: 0.875rem;
+        color: #6b7280;
+      }
+    }
+
+    .social-login {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        font-size: 0.875rem;
+        color: #4b5563;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+
+        svg {
+          margin-right: 0.5rem;
+        }
+
+        &:hover {
+          background-color: #f3f4f6;
+          border-color: #9ca3af;
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 640px) {
+  .login-container {
+    padding: 2rem 1rem;
+
+    .login-card {
+      padding: 2rem 1.5rem;
+    }
+
+    .brand-title {
+      font-size: 1.75rem;
+    }
+
+    .login-header {
+      font-size: 1.25rem;
+    }
+  }
+}
+
